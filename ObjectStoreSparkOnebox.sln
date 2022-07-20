@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectStoreSparkOnebox", "ObjectStoreSparkOnebox.csproj", "{C598111D-34D4-44B5-B365-D1FAE9AA3BB5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		ClusterMode_Debug|x64 = ClusterMode_Debug|x64
+		LocalMode_Debug|x64 = LocalMode_Debug|x64
+		LocalMode_Release|x64 = LocalMode_Release|x64
+		ClusterMode_Release|x64 = ClusterMode_Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C598111D-34D4-44B5-B365-D1FAE9AA3BB5}.ClusterMode_Debug|x64.ActiveCfg = ClusterMode_Debug|x64
+		{C598111D-34D4-44B5-B365-D1FAE9AA3BB5}.ClusterMode_Debug|x64.Build.0 = ClusterMode_Debug|x64
+		{C598111D-34D4-44B5-B365-D1FAE9AA3BB5}.ClusterMode_Debug|x64.Deploy.0 = ClusterMode_Debug|x64
+		{C598111D-34D4-44B5-B365-D1FAE9AA3BB5}.LocalMode_Debug|x64.ActiveCfg = LocalMode_Debug|x64
+		{C598111D-34D4-44B5-B365-D1FAE9AA3BB5}.LocalMode_Debug|x64.Build.0 = LocalMode_Debug|x64
+        {C598111D-34D4-44B5-B365-D1FAE9AA3BB5}.LocalMode_Debug|x64.Deploy.0 = LocalMode_Debug|x64
+		{C598111D-34D4-44B5-B365-D1FAE9AA3BB5}.LocalMode_Release|x64.ActiveCfg = LocalMode_Release|x64
+		{C598111D-34D4-44B5-B365-D1FAE9AA3BB5}.LocalMode_Release|x64.Build.0 = LocalMode_Release|x64
+        {C598111D-34D4-44B5-B365-D1FAE9AA3BB5}.LocalMode_Release|x64.Deploy.0 = LocalMode_Release|x64
+		{C598111D-34D4-44B5-B365-D1FAE9AA3BB5}.ClusterMode_Release|x64.ActiveCfg = ClusterMode_Release|x64
+		{C598111D-34D4-44B5-B365-D1FAE9AA3BB5}.ClusterMode_Release|x64.Build.0 = ClusterMode_Release|x64
+        {C598111D-34D4-44B5-B365-D1FAE9AA3BB5}.ClusterMode_Release|x64.Deploy.0 = ClusterMode_Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

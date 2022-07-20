@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">ClusterMode_Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <ProjectGuid>{C598111D-34D4-44B5-B365-D1FAE9AA3BB5}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ObjectStoreSparkOnebox</RootNamespace>
+    <AssemblyName>ObjectStoreSparkOnebox</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ClusterMode_Debug|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\ClusterMode_Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ClusterMode_Release|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\ClusterMode_Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'LocalMode_Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\LocalMode_Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;LOCALMODE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'LocalMode_Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\LocalMode_Release\</OutputPath>
+    <DefineConstants>TRACE;LOCALMODE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DataQueryLibrary">
+      <HintPath>ObjectStoreSparkCsharpBinaries\DataQueryLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel">
+      <HintPath>ObjectStoreSparkCsharpBinaries\Microsoft.IdentityModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Search.Autopilot">
+      <HintPath>ObjectStoreSparkCsharpBinaries\Microsoft.Search.Autopilot.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Search.Autopilot.Monitoring.Web">
+      <HintPath>ObjectStoreSparkCsharpBinaries\Microsoft.Search.Autopilot.Monitoring.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Security.Authentication">
+      <HintPath>ObjectStoreSparkCsharpBinaries\Microsoft.WindowsAzure.Security.Authentication.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Security.Authentication.Contracts">
+      <HintPath>ObjectStoreSparkCsharpBinaries\Microsoft.WindowsAzure.Security.Authentication.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Security.Authentication.Logging">
+      <HintPath>ObjectStoreSparkCsharpBinaries\Microsoft.WindowsAzure.Security.Authentication.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="MonitoringWebClientWrapper">
+      <HintPath>ObjectStoreSparkCsharpBinaries\MonitoringWebClientWrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="HadoopManaged">
+      <HintPath>ObjectStoreSparkCsharpBinaries\HadoopManaged.dll</HintPath>
+    </Reference>
+    <Reference Include="HadoopIdls">
+      <HintPath>ObjectStoreSparkCsharpBinaries\HadoopIdls.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bond">
+      <HintPath>ObjectStoreSparkCsharpBinaries\Microsoft.Bond.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bond.Interfaces">
+      <HintPath>ObjectStoreSparkCsharpBinaries\Microsoft.Bond.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bond.Rpc">
+      <HintPath>ObjectStoreSparkCsharpBinaries\Microsoft.Bond.Rpc.dll</HintPath>
+    </Reference>
+    <Reference Include="RapidSerializer">
+      <HintPath>ObjectStoreSparkCsharpBinaries\RapidSerializer.dll</HintPath>
+    </Reference>
+    <Reference Include="SparkCsharp">
+      <HintPath>ObjectStoreSparkCsharpBinaries\SparkCsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="SparkCsharp.Bridge">
+      <HintPath>ObjectStoreSparkCsharpBinaries\SparkCsharp.Bridge.dll</HintPath>
+    </Reference>
+    <Reference Include="KeyLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>D:\dev\ObjectStoreSparkOnebox_Multimedia_PageData\packages\Microsoft.Bing.MultimediaRepository.KeyLib.1.1.23327087\lib\net45\KeyLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Search.ObjectStore.Client">
+      <HintPath>ReferencedAssemblies\Microsoft.Search.ObjectStore.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TextTemplating">
+      <HintPath>ReferencedAssemblies\Microsoft.VisualStudio.TextTemplating.dll</HintPath>
+    </Reference>
+    <Reference Include="Nettrace">
+      <HintPath>ReferencedAssemblies\Nettrace.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VcClient">
+      <HintPath>ObjectStoreSparkCsharpBinaries\VcClient.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent Condition="'$(Configuration)|$(Platform)' == 'LocalMode_Debug|x64' Or '$(Configuration)|$(Platform)' == 'LocalMode_Release|x64'">
+      pushd $(ProjectDir)\spark-binaries\confLocal
+      CheckJava.cmd
+      popd
+    </PreBuildEvent>
+  </PropertyGroup>
+  <Target Name="BeforeBuild">
+    <ItemGroup>
+      <SparkCsharpBinaries Include="$(ProjectDir)\ObjectStoreSparkCsharpBinaries\*.*" />
+    </ItemGroup>
+    <ItemGroup>
+      <ZipExecutable Include="$(ProjectDir)\zip.exe" />
+    </ItemGroup>
+    <Copy SourceFiles="@(ZipExecutable)" DestinationFolder="$(OutputPath)" ContinueOnError="false" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="@(SparkCsharpBinaries)" DestinationFolder="$(OutputPath)" ContinueOnError="false" SkipUnchangedFiles="true" />
+    <Copy Condition="'$(Configuration)|$(Platform)' == 'ClusterMode_Debug|x64' Or '$(Configuration)|$(Platform)' == 'ClusterMode_Release|x64'" SourceFiles="$(ProjectDir)\ObjectStoreSparkCsharpBinaries\SparkSubmitCommandCluster.txt" DestinationFiles="$(OutputPath)\SparkSubmitCommand.txt" ContinueOnError="false" />
+    <Copy Condition="'$(Configuration)|$(Platform)' == 'LocalMode_Debug|x64' Or '$(Configuration)|$(Platform)' == 'LocalMode_Release|x64'" SourceFiles="$(ProjectDir)\ObjectStoreSparkCsharpBinaries\SparkSubmitCommandLocal.txt" DestinationFiles="$(OutputPath)\SparkSubmitCommand.txt" ContinueOnError="false" />
+  </Target>
+  <PropertyGroup>
+    <PostBuildEvent>
+      pushd $(ProjectDir)\$(OutputPath)
+      MakeZipForObjectStoreSparkBinaries.cmd $(ProjectDir)\ObjectStoreSparkCsharpBinaries\
+      popd
+    </PostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <!--COMPILED_SCHEMAS-->
+    <Compile Include="CompiledSchemas\csharp_proxies.cs" />
+    <Compile Include="CompiledSchemas\csharp_services.cs" />
+    <Compile Include="CompiledSchemas\csharp_types.cs" />
+    <Compile Include="SparkJob.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
